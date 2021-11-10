@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "format": "prettier --write \"src/*.ts\"",
+    "prepare": "npm run build"
   },
   "author": {
     "name": "Gerald Host"
@@ -13,6 +15,8 @@
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.3.0",
     "@tsconfig/svelte": "^2.0.1",
+    "prettier": "^2.4.1",
+    "prettier-plugin-svelte": "^2.4.0",
     "rollup": "^2.59.0",
     "svelte": "^3.44.1",
     "tslib": "^2.3.1",
