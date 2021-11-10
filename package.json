@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "./linecount.sh",
     "build": "rollup -c",
     "format": "prettier --write \"src/*.ts\"",
-    "prepare": "npm run build"
+    "prepare": "husky install && npm run build"
   },
   "author": {
     "name": "Gerald Host"
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.3.0",
     "@tsconfig/svelte": "^2.0.1",
+    "husky": "^7.0.4",
     "prettier": "^2.4.1",
     "prettier-plugin-svelte": "^2.4.0",
     "rollup": "^2.59.0",
